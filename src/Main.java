@@ -12,6 +12,7 @@ public class Main {
         System.out.print("Seçilecek eleman sayısı giriniz (r) : ");
         int r = input.nextInt();
         int b = n - r;
+        if(n>r){
         for (int i = 1; i <= n; i++) {
             nfak = nfak * i;
         }
@@ -23,5 +24,8 @@ public class Main {
         }
         sonuc = nfak / (rfak * bfak);
         System.out.print("Kombinasyon Sonucunuz : " + sonuc);
+    }else{
+            System.out.print("n değeri r değerinden büyük olmalıdır.");
+        }
     }
 }
